@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Dapur Nusantara Dimas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🍽️ Menu Dapur Nusantara</h1>
+
+    <a href="index.html">Home</a> |
+    <a href="menu.html">Menu</a> |
+    <a href="tentang.html">Tentang Kami</a>
+
+    <hr>
+
+    <h2>Menu Makanan</h2>
+
+    <h3>🍚 Nasi Goreng</h3>
+    <img 
+        src="https://assets.unileversolutions.com/recipes-v2/258052.jpg"
+        alt="Nasi Goreng"
+        width="250">
+    <p>Nasi goreng dengan bumbu khas Indonesia.</p>
+    <p><b>Rp15.000</b></p>
+    <button onclick="tambahKeranjang('Nasi Goreng', 15000)">
+        Tambah ke Keranjang
+    </button>
+
+    <h3>🍗 Ayam Goreng</h3>
+    <img 
+        src="https://assets.unileversolutions.com/v1/124411200.png"
+        alt="Ayam Goreng"
+        width="250">
+    <p>Ayam goreng gurih dengan sambal.</p>
+    <p><b>Rp18.000</b></p>
+    <button onclick="tambahKeranjang('Ayam Goreng', 18000)">
+        Tambah ke Keranjang
+    </button>
+
+    <h3>🍜 Mie Goreng</h3>
+    <img 
+        src="https://assets.dapurumami.com/uploads/recipe/mie-goreng-simple-z9n3yryq-91cc6abc28690cc635f7d56921b82963.webp"
+        alt="Mie Goreng"
+        width="250">
+    <p>Mie goreng dengan sayuran dan bumbu pilihan.</p>
+    <p><b>Rp13.000</b></p>
+    <button onclick="tambahKeranjang('Mie Goreng', 13000)">
+        Tambah ke Keranjang
+    </button>
+
+    <h2>Minuman</h2>
+
+    <h3>🥤 Es Teh</h3>
+    <img 
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOvC61kyQHNQZqVzjhWSNVxbbEoZaY160PPbMct-THAA&s=10"
+        alt="Es Teh"
+        width="250">
+    <p><b>Rp5.000</b></p>
+    <button onclick="tambahKeranjang('Es Teh', 5000)">
+        Tambah ke Keranjang
+    </button>
+
+    <hr>
+
+    <h2>🛒 Keranjang</h2>
+
+    <div id="keranjang">
+        <p>Keranjang masih kosong.</p>
+    </div>
+
+    <h3 id="total">Total: Rp0</h3>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
